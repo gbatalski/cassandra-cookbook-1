@@ -4,7 +4,7 @@ default[:cassandra][:apt][:uri]           = "http://www.apache.org/dist/cassandr
 default[:cassandra][:apt][:distribution] = "11x"
 default[:cassandra][:apt][:components] = "%w[main]"  
 default[:cassandra][:apt][:keyserver]     = "pgp.mit.edu"
-default[:cassandra][:apt][:key]           = "F758CE318D77295D"
+default[:cassandra][:apt][:key]           = "4BD736A82B5C1B00" #"F758CE318D77295D"
 
 default[:cassandra][:dir]           = "/etc/cassandra"
 
