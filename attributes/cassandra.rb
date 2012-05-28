@@ -1,7 +1,7 @@
 ### GENERAL
 #
 default[:cassandra][:apt][:uri]           = "http://www.apache.org/dist/cassandra/debian"
-default[:cassandra][:apt][:distributions] = %w[11x]
+default[:cassandra][:apt][:distribution] = %w[11x]
 default[:cassandra][:apt][:keyserver]     = "pgp.mit.edu"
 default[:cassandra][:apt][:key]           = "F758CE318D77295D"
 

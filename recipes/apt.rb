@@ -2,7 +2,7 @@
 # http://wiki.apache.org/cassandra/DebianPackaging
 apt_repository "cassandra" do
   uri node[:cassandra][:apt][:uri]
-  distributions node[:cassandra][:apt][:distributions]
+  distribution node[:cassandra][:apt][:distribution]
   keyserver node[:cassandra][:apt][:keyserver]
   key node[:cassandra][:apt][:key]
 end
