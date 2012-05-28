@@ -12,3 +12,13 @@ template "cassandra.yaml" do
   backup false
   notifies :restart, resources(:service => "cassandra"), :delayed
 end
+
+
+template "cassandra-env.sh" do
+  path "#{node[:cassandra][:dir]}/cassandra.env"
+  owner "root"
+  group "root"
+  mode 0644
+  backup false
+  notifies :restart, resources(:service => "cassandra"), :delayed
+end
