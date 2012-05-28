@@ -15,7 +15,7 @@ end
 
 
 template "cassandra-env.sh" do
-  path "#{node[:cassandra][:dir]}/cassandra.env"
+  path "#{node[:cassandra][:dir]}/cassandra-env.sh"
   owner "root"
   group "root"
   mode 0644
